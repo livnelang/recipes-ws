@@ -9,16 +9,7 @@ const app: Application = express();
 // Body parsing Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-// Add a list of allowed origins.
-// If you have more origins you would like to add, you can add them to the array below.
-const allowedOrigins = ['http://localhost:8080', 'https://recipes-notebook.herokuapp.com'];
-
-const options: cors.CorsOptions = {
-  origin: allowedOrigins
-};
-app.use(cors(options));
-
+app.use(cors());
 
 // Addong routes
 app.use(routes);

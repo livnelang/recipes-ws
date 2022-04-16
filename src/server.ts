@@ -13,5 +13,5 @@ app.use(cors());
 app.use(routes);
 
 app.listen(process.env.PORT || 5000, (): void => {
-  console.log(`Connected successfully on port ${process.env.PORT}`);
+  console.log(`Connected successfully on port ${process.env.PORT || 5000}`);
 });

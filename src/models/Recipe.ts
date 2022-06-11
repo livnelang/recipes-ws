@@ -1,5 +1,5 @@
 import { model, Schema, Types } from "mongoose";
-import { Step } from "../messages/recipe";
+import { Step } from "../messages/Recipe";
 
 type RecipeCategory = "Food" | "Drink" | "Deserts";
 

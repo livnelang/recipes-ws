@@ -1,4 +1,4 @@
-import { RecipeCreateParams, Step } from "../messages/recipe";
+import { RecipeCreateParams, Step } from "../messages/Recipe";
 import { Recipe, RecipeModel } from "../models/Recipe";
 import cloudinaryConnection from "../configs/cloudinary";
 import { UploadApiResponse } from "cloudinary";

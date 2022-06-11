@@ -1,10 +1,10 @@
 export interface Step {
   text: string;
-  images?: string[];
+  images: string[];
 }
 
 export interface UploadRecipeDetailsForm {
-  coverPhoto: string | null;
+  coverPhoto: string;
   name: string;
   description: string;
   preperationLength: number;
